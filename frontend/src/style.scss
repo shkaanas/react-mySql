@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//book card
+.card {
+  margin: 15px;
+  padding: 35px 22px;
+  width: 225px;
+  height: 270px;
+  text-align: center;
+  border-radius: 1.25rem;
+  background-color: #caff8a;
+  color: #360568;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.desc {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 35px;
+}
+
+.base_text {
+  font-size: 1rem;
+  &_bold {
+    font-weight: 600;
+  }
+}
+
+.little_text {
+  font-size: 0.875rem;
+  &_bold {
+    font-weight: 500;
+  }
+}
+
+//block
+.block{
+  width: 300px;
+  padding: 40px;
+  border: 3px solid #a8d374;
+  border-radius: 20px;
+  margin: auto 50px;
+  text-align: center;
+  & h2 {
+    font-size: 1.3rem;
+  }
+  & p {
+    font-weight: 700;
+    font-size: 5rem;
+    color: #ab70d9;
+  }
+}
+
+//for all books
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // align-items: center;
+  flex: 1;
+}
+
+//buttons
+.base_btn {
+  width: 240px;
+  height: 45px;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: white;
+  background-color: #ab70d9;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  &:hover {
+    background-color: #895bac;
+  }
+}
+
+.delete_btn {
+  width: 225px;
+  height: 40px;
+  font-size: .825rem;
+  color: #360568;
+  border-radius: 20px;
+  border: 1px solid#ab70d9;
+  transition: all .5s;
+
+  &:hover {
+    border: 1px solid#a8d374;
+    color: #a8d374;
+  }
+  &_alt {
+    background-color: #ab70d9;
+    color: white;
+    &:hover {
+      background-color: #895bac;
+      color: white;
+      border: 1px solid#895bac;
+    }
+  }
+
+}
+
+//inputs
+.input-base {
+  padding: 10px 20px;
+  margin: 10px 0 15px 0;
+  width: 410px;
+  height: 45px;
+  border-radius: 1.25rem;
+  border: 2px solid #ab70d9;
+  background: transparent;
+  color: #360568;
+  font-size: 1rem;
+  display: inline-block;
+
+  &_label {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #360568;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
